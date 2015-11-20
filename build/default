@@ -39,4 +39,9 @@ server {
     location ~ /\.ht {
         deny all;
     }
+
+     #password protection
+     auth_basic "Restricted";
+     auth_basic_user_file /var/www/.htpasswd;
+
 }
